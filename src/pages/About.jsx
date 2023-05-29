@@ -1,9 +1,9 @@
 import NavBar from '../components/NavBar'
 
-export default function News() {
+export default function About() {
   return (
     <>
-      <NavBar selectedLink="Home"/>
+      <NavBar selectedLink="About"/>
     </>
   );
 }

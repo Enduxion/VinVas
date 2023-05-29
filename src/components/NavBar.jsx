@@ -1,20 +1,36 @@
-import '../css/NavBarStyle.css';
-import logo from '../assets/logo.png';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "../css/NavBarStyle.css";
+import NavBarLinks from "./NavBarLinks";
 
-export default function NavBar() {
+export default function NavBar(props) {
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
+  function handleNavBar() {
+    setIsHamburgerOpen((prevValue) => !prevValue);
+  }
+  const navBarData = [
+    "Home",
+    "About Us",
+    "Announcements",
+    "Gallery",
+    "Staff",
+    "Contact Us",
+  ];
+  let navBarLinks = navBarData.map((data, index) => {
+    return (
+      <NavBarLinks selectedLink={props.selectedLink} value={data} key={index} />
+    );
+  });
   return (
-    <nav className='navBar'>
-      <Link to='/' className='navBar--logo--link'>
+    <nav className="navBar">
+      <Link to="/" className="navBar--logo--link">
         VinVas.
       </Link>
-      <div className='navBar--links'>
-        <Link to='/' className='navBar--links--link'>Home</Link>
-        <Link to='/' className='navBar--links--link'>About Us</Link>
-        <Link to='/' className='navBar--links--link'>Announcements</Link>
-        <Link to='/' className='navBar--links--link'>Gallery</Link>
-        <Link to='/' className='navBar--links--link'>Staff</Link>
-        <Link to='/' className='navBar--links--link'>Contact Us</Link>
+      <div className={`navBar--links ${isHamburgerOpen ? "navBar--links--open" : ""}`}>{navBarLinks}</div>
+      <div className={`navBar--hamburger--container ${isHamburgerOpen ? "navBar--hamburger--open" : ""}`} onClick={handleNavBar}>
+        <div className="navBar--hamburger--stick hamburger--stick1"></div>
+        <div className="navBar--hamburger--stick hamburger--stick2"></div>
+        <div className="navBar--hamburger--stick hamburger--stick3"></div>
       </div>
     </nav>
   );
