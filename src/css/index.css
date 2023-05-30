@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+:root {
+  --primary--color: 234, 234, 234;
+  --secondary--color: 211, 211, 211;
+  --text--color: #111;
+  --text--color-focused: #333;
+}
 * {
   margin: 0;
   padding: 0;

@@ -22,11 +22,14 @@ export default function NavBar(props) {
     );
   });
   return (
-    <nav className="navBar">
+    <nav className={`navBar ${props.darkMode ? "navBar--theme--dark" : "navBar--theme--light"}`}>
       <Link to="/" className="navBar--logo--link">
         VinVas.
       </Link>
       <div className={`navBar--links ${isHamburgerOpen ? "navBar--links--open" : ""}`}>{navBarLinks}</div>
+      <div className="navBar--toggle--darkMode" onClick={props.toggleDarkMode}>
+        <i className={`fa-solid ${props.darkMode ? "fa-sun" : "fa-moon"}`} id="darkModeButton"></i>
+      </div>
       <div className={`navBar--hamburger--container ${isHamburgerOpen ? "navBar--hamburger--open" : ""}`} onClick={handleNavBar}>
         <div className="navBar--hamburger--stick hamburger--stick1"></div>
         <div className="navBar--hamburger--stick hamburger--stick2"></div>
