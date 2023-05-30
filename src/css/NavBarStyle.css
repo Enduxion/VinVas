@@ -42,6 +42,7 @@
 }
 .navBar--links--link--selected::before {
   width: 100%;
+  transition: none !important;
 }
 .navBar--links--link--selected:hover::before {
   width: 100% !important;
