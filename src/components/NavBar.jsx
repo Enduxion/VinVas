@@ -1,15 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import "../css/NavBarStyle.css";
-
+import logo from "../assets/logo.png";
 import NavBarLinks from "./NavBarLinks";
 
 export default function NavBar(props) {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
+  const [isNavBarHalf, setIsNavBarHalf] = useState(false);
+  
   function handleNavBar() {
     setIsHamburgerOpen((prevValue) => !prevValue);
   }
+
+  useEffect(() => {
+    function setNavBar() {
+      if (window.scrollY >= 60) {
+        setIsNavBarHalf(true);
+      } else {
+        setIsNavBarHalf(false);
+      }
+    }
+    document.addEventListener("scroll", setNavBar);
+    return function () {
+      document.removeEventListener("scroll", setNavBar);
+    };
+  }, []);
   const navBarData = [
     "Home",
     "About Us",
@@ -23,9 +39,11 @@ export default function NavBar(props) {
       <NavBarLinks selectedLink={props.selectedLink} value={data} key={index} />
     );
   });
+
   return (
-    <nav className="navBar">
+    <nav className={`navBar ${isNavBarHalf ? "navBar--half" : "navBar--full"}`}>
       <Link to="/" className="navBar--logo--link">
+        <img src={logo} className="navBar--logo--image" alt="logo" />
         VinVas.
       </Link>
       <div

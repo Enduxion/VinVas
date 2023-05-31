@@ -4,6 +4,9 @@
   --secondary--color: 211, 211, 211;
   --text--color: #111;
   --text--color-focused: #333;
+
+  /* Additional Vars */
+  --secondary--color-dark: 26, 29, 35;
 }
 * {
   margin: 0;
