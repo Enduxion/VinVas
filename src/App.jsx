@@ -1,9 +1,11 @@
 import { Route, Routes } from "react-router-dom";
-import "./css/App.css";
-import News from "./pages/News";
-import About from "./pages/About";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
+
+import "./css/App.css";
+
+import News from "./pages/News";
+import About from "./pages/About";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);

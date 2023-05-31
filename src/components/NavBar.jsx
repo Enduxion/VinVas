@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
 import "../css/NavBarStyle.css";
+
 import NavBarLinks from "./NavBarLinks";
 
 export default function NavBar(props) {
