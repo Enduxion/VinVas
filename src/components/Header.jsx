@@ -1,9 +1,11 @@
 import "../css/HeaderStyle.css";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <>
-      <div style={{height: 10000 }}></div>
+      <div className={`Header--div ${props.classValue ? props.classValue : "" }`}>
+        <img className="Header--image" src={props.img} />
+      </div>
     </>
   );
 }

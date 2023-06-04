@@ -32,7 +32,7 @@ export default function NavBar(props) {
     "Announcements",
     "Gallery",
     "Staff",
-    "Contact Us",
+    "Contact Us"
   ];
   let navBarLinks = navBarData.map((data, index) => {
     return (
@@ -44,7 +44,7 @@ export default function NavBar(props) {
     <nav className={`navBar ${isNavBarHalf ? "navBar--half" : "navBar--full"}`}>
       <Link to="/" className="navBar--logo--link">
         <img src={logo} className="navBar--logo--image" alt="logo" />
-        VinVas.
+        VVSS.
       </Link>
       <div
         className={`navBar--links ${

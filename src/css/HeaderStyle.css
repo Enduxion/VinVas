@@ -1,0 +1,13 @@
+.Header--NavBar--margin {
+  margin: 80px 30px 10px 30px;
+}
+.Header--div {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: calc(100vh - 90px);
+  border-radius: 10px;
+}
+.Header--image {
+  width: 100%;
+}
