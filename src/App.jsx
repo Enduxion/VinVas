@@ -21,18 +21,20 @@ function App() {
     tl.fromTo(
       document.getElementById("darkModeButton"),
       { rotation: 0 },
-      { rotation: 180 }, "-=1"
+      { rotation: 180 },
+      "-=1"
     );
     tl.fromTo(
       document.getElementById("darkModeButton"),
       { rotation: 180 },
       { rotation: 0 }
     );
-    gsap.to(':root', {
-      '--primary--color': darkMode ? '35, 39, 47' : '234, 234, 234',
-      '--secondary--color': darkMode ? '26, 29, 35' : '211, 211, 211',
-      '--text--color': darkMode ? '#eee' : '#111',
-      '--text--color-focused': darkMode ? '#ccc' : '#333'
+    gsap.to(":root", {
+      "--primary--color": darkMode ? "35, 39, 47" : "234, 234, 234",
+      "--secondary--color": darkMode ? "26, 29, 35" : "211, 211, 211",
+      "--text--color": darkMode ? "#eee" : "#111",
+      "--text--color-focused": darkMode ? "#ccc" : "#333",
+      "--text--color-tint": darkMode ? "#aaa" : "#666",
     });
   }, [darkMode]);
   return (

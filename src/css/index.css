@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
 :root {
   --primary--color: 234, 234, 234;
   --secondary--color: 211, 211, 211;
   --text--color: #111;
   --text--color-focused: #333;
-
+  --text--color-tint: #666;
   /* Additional Vars */
-  --secondary--color-dark: 26, 29, 35;
+  --secondary--color-dark: 0, 0, 0;
 }
 * {
   margin: 0;

@@ -1,13 +1,39 @@
 .Header--NavBar--margin {
-  margin: 80px 30px 10px 30px;
+  margin: 70px 70px 10px 70px;
+}
+.Header--div--container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .Header--div {
   display: flex;
   align-items: center;
-  overflow: hidden;
-  height: calc(100vh - 90px);
+  justify-content: center;
+  height: 100vh;
   border-radius: 10px;
+  filter: contrast(150%);
+  box-shadow: 0px 2px 4px rgba(var(--secondary--color-dark), 0.5);
+  background-attachment: fixed;
 }
-.Header--image {
-  width: 100%;
+.Header--text {
+  display: flex;
+  width: 40%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 4em;
+  text-shadow: 3px 2px 3px black;
+  filter: drop-shadow(0px 0px 3px rgb(255, 255, 255));
+}
+@media screen and (max-width: 860px) {
+  .Header--NavBar--margin {
+    margin: 70px 10px 10px 10px;
+  }
+  .Header--div {
+    border-radius: 10px;
+    filter: contrast(200%);
+  }
+  .Header--text {
+    font-size: 2.5em;
+  }
 }

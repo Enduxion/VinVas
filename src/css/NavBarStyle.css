@@ -4,7 +4,7 @@
   align-items: center;
   padding-inline: 20px;
   height: 60px;
-  background-color: rgba(var(--secondary--color), 0.3);
+  background-color: rgba(var(--primary--color), 0.3);
   backdrop-filter: blur(5px);
   box-shadow: 0px 2px 10px rgba(var(--secondary--color-dark), 1);
   z-index: 10;
