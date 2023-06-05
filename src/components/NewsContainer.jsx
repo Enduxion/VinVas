@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import AsyncImage from "./AsyncImage";
+
 import "../css/NewsContainerStyle.css";
 
 const MAX_LINE_VAL = 150;
@@ -44,7 +46,7 @@ export default function NewsContainer(props) {
         )}
       </div>
       {props.img ? (
-        <img className="NewsContainer--image" src={props.img}></img>
+        <AsyncImage className="NewsContainer--image" src={props.img}></AsyncImage>
       ) : (
         ""
       )}
