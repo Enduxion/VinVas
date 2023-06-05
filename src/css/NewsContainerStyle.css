@@ -3,8 +3,10 @@
   flex-direction: column;
   background-color: rgba(var(--primary--color));
   padding: 20px;
+  padding-bottom: 0px;
   width: 50%;
   margin-top: 30px;
+  border-radius: 15px;
 }
 .NewsContainer:last-child {
   margin-bottom: 30px;
@@ -17,6 +19,8 @@
 .NewsContainer--title {
   font-size: 1.5em;
   font-weight: bold;
+  padding-right: 2px;
+  margin-bottom: 5px;;
   color: var(--text--color);
 }
 .NewsContainer--uploadDate {
@@ -26,6 +30,33 @@
 .NewsContainer--descriptionBox {
   font-size: 1em;
   color: var(--text--color);
+}
+.NewsContainer--image {
+  border-radius: 5px;
+  margin-block: 5px;
+}
+.NewsContainer--taskArea {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-block: 5px 8px;
+  width: 100%;
+}
+.NewsContainer--taskArea--btn {
+  background-color: rgba(var(--secondary--color));
+  text-decoration: none;
+  color: var(--text--color);
+  border-radius: 5px;
+  font-size: 1.2em;
+  padding-block: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.NewsContainer--taskArea--text {
+  font-size: 0.9em;
+}
+.NewsContainer--taskArea--btn:hover {
+  background-color: rgba(var(--secondary--color), 0.6);
 }
 @media screen and (max-width: 850px) {
   .NewsContainer {
@@ -51,5 +82,11 @@
   .NewsContainer--descriptionBox {
     font-size: 0.85em;
     color: var(--text--color);
+  }
+  .NewsContainer--taskArea--btn {
+    font-size: 1em;
+  }
+  .NewsContainer--taskArea--text {
+    font-size: 0.8em;
   }
 }

@@ -32,7 +32,7 @@ const postData = [
     title: "Mysteries of the Deep",
     date: "2023-06-04",
     description: "Dive into the depths of the ocean and unravel the Mysteries of the Deep. Plunge into an underwater world teeming with vibrant marine life, hidden treasures, and ancient shipwrecks. Encounter majestic creatures, navigate through labyrinthine coral reefs, and discover forgotten civilizations beneath the waves. Immerse yourself in the awe-inspiring beauty and secrets that lie beneath the surface. Prepare to be mesmerized by the wonders that await in this aquatic expedition.",
-    img: getRandomImage()
+    // img: getRandomImage()
   },
   {
     id: 5,

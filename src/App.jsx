@@ -6,6 +6,7 @@ import "./css/App.css";
 
 import News from "./pages/News";
 import About from "./pages/About";
+import Article from "./pages/Article";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -48,6 +49,12 @@ function App() {
           path="/about"
           element={
             <About darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          }
+        />
+        <Route
+          path="/news/article/:id"
+          element={
+            <Article darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           }
         />
       </Routes>
