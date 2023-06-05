@@ -14,3 +14,7 @@
   box-sizing: border-box;
   font-family: poppins, Inter, sans-serif;
 }
+.btn--text {
+  color: var(--text--color-tint);
+  cursor: pointer;
+}
