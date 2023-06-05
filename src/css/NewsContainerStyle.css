@@ -30,7 +30,7 @@
 @media screen and (max-width: 850px) {
   .NewsContainer {
     padding: 15px;
-    width: 75%;
+    width: 90%;
     margin-top: 30px;
   }
   .NewsContainer--titleBar {
