@@ -59,7 +59,8 @@ export default function NewsContainer(props) {
       <div className="NewsContainer--taskArea">
         <Link
           to={`/news/article/${props.idKey}`}
-          target="_blank"
+          rel="noreferrer"
+          target={"_blank"}
           className="NewsContainer--taskArea--btn"
         >
           <i className="fa-solid fa-up-right-from-square"></i>
