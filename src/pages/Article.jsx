@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import NavBar from "../components/NavBar";
+import AsyncImage from "../components/AsyncImage";
 
 import postData from "../assets/data/newsData";
 
@@ -64,12 +65,12 @@ export default function Article(props) {
                 isLandscape ? "" : "Article--protraitContainer"
               }`}
             >
-              <img
+              <AsyncImage
                 src={news.img}
                 className={`Article--image ${
                   isLandscape ? "" : "Article--protrait"
                 }`}
-              ></img>
+              />
             </div>
           ) : (
             ""
@@ -77,22 +78,16 @@ export default function Article(props) {
           <div className="Article--description">{news.description}</div>
         </div>
         <div className="Article--taskArea">
-        <Link
-          to='/'
-          className="Article--taskArea--btn"
-        >
-          <i className="fa-solid fa-arrow-right-to-bracket"></i>
-          <span className="Article--taskArea--text"> Go Back</span>
-        </Link>
-        <span
-          className="Article--taskArea--btn"
-          onClick={copyButtonPressed}
-        >
-          {popUpShown ? <span className="popUp">Copied!</span> : ""}
-          <i className="fa-regular fa-clipboard"></i>
-          <span className="Article--taskArea--text"> Copy Link</span>
-        </span>
-      </div>
+          <Link to="/" className="Article--taskArea--btn">
+            <i className="fa-solid fa-arrow-right-to-bracket"></i>
+            <span className="Article--taskArea--text"> Go Back</span>
+          </Link>
+          <span className="Article--taskArea--btn" onClick={copyButtonPressed}>
+            {popUpShown ? <span className="popUp">Copied!</span> : ""}
+            <i className="fa-regular fa-clipboard"></i>
+            <span className="Article--taskArea--text"> Copy Link</span>
+          </span>
+        </div>
       </div>
     </>
   );
