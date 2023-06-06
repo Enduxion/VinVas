@@ -8,7 +8,7 @@ import NavBarLinks from "./NavBarLinks";
 export default function NavBar(props) {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const [isNavBarHalf, setIsNavBarHalf] = useState(false);
-  
+
   function handleNavBar() {
     setIsHamburgerOpen((prevValue) => !prevValue);
   }
@@ -32,7 +32,7 @@ export default function NavBar(props) {
     "Announcements",
     "Gallery",
     "Staff",
-    "Contact Us"
+    "Contact Us",
   ];
   let navBarLinks = navBarData.map((data, index) => {
     return (

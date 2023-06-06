@@ -1,11 +1,11 @@
 .NewsContainer {
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
-  background-color: rgba(var(--primary--color));
   padding: 20px;
   padding-bottom: 0px;
+  flex-direction: column;
   width: 50%;
-  margin-top: 30px;
+  background-color: rgba(var(--primary--color));
   border-radius: 15px;
 }
 .NewsContainer:last-child {
@@ -13,14 +13,14 @@
 }
 .NewsContainer--titleBar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 .NewsContainer--title {
+  margin-bottom: 5px;;
+  padding-right: 2px;
   font-size: 1.5em;
   font-weight: bold;
-  padding-right: 2px;
-  margin-bottom: 5px;;
   color: var(--text--color);
 }
 .NewsContainer--uploadDate {
@@ -32,8 +32,8 @@
   color: var(--text--color);
 }
 .NewsContainer--image {
-  border-radius: 5px;
   margin-block: 5px;
+  border-radius: 5px;
 }
 .NewsContainer--taskArea {  
   display: grid;
@@ -43,13 +43,17 @@
   width: 100%;
 }
 .NewsContainer--taskArea--btn {
-  background-color: rgba(var(--secondary--color));
-  text-decoration: none;
-  color: var(--text--color);
-  border-radius: 5px;
-  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: pre-wrap;
   padding-block: 5px;
   text-align: center;
+  text-decoration: none;
+  background-color: rgba(var(--secondary--color));
+  color: var(--text--color);
+  font-size: 1.2em;
+  border-radius: 5px;
   cursor: pointer;
 }
 .NewsContainer--taskArea--text {
@@ -60,9 +64,9 @@
 }
 @media screen and (max-width: 850px) {
   .NewsContainer {
+    margin-top: 30px;
     padding: 15px;
     width: 90%;
-    margin-top: 30px;
   }
   .NewsContainer--titleBar {
     display: flex;

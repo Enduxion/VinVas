@@ -1,9 +1,13 @@
-import NavBar from '../components/NavBar'
+import NavBar from "../components/NavBar";
 
 export default function About(props) {
   return (
     <>
-      <NavBar selectedLink="About" darkMode={props.darkMode} toggleDarkMode={props.toggleDarkMode}/>
+      <NavBar
+        selectedLink="About"
+        darkMode={props.darkMode}
+        toggleDarkMode={props.toggleDarkMode}
+      />
     </>
   );
 }

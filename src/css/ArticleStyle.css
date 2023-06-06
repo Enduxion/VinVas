@@ -1,0 +1,118 @@
+.Article--main {
+  margin: 80px 180px;
+  padding: 10px 20px;
+  background-color: rgba(var(--secondary--color));
+  border-radius: 10px;
+}
+.Article--top {
+  margin-bottom: 10px;
+}
+.Article--title {
+  position: relative;
+  font-size: 2.7em;
+  font-weight: bold;
+  color: var(--text--color);
+}
+.Article--title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(var(--primary--color), 0.9);
+  width: 100%;
+  height: 4px;
+}
+.Article--date {
+  font-size: 1.1em;
+  color: var(--text--color-focused);
+}
+.Article--punchline {
+  font-size: 1.1em;
+  color: var(--text--color-focused);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+.Article--middle {
+  display: flex;
+  flex-direction: column;
+}
+.Article--protraitContainer {
+  align-self: center;
+  display: flex;
+  width: 100%;
+  background-color: rgba(var(--primary--color));
+  align-items: center;
+  justify-content: center;
+}
+.Article--image {
+  width: 100%;
+}
+.Article--protrait {
+  width: 50% !important;
+  border-radius: 0px !important;
+}
+.Article--description {
+  line-height: 2em;
+  font-size: 1.3em;
+  color: var(--text--color);
+  white-space: pre-wrap;
+}
+
+.Article--taskArea {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-block: 5px 8px;
+  width: 100%;
+}
+.Article--taskArea--btn {
+  display: flex;
+  padding-block: 5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  white-space: pre-wrap;
+  text-decoration: none;
+  background-color: rgba(var(--primary--color), 0.96);
+  color: var(--text--color);
+  font-size: 1.4em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Article--taskArea--text {
+  font-size: 0.9em;
+}
+.Article--taskArea--btn:hover {
+  background-color: rgba(var(--primary--color), 0.6);
+}
+@media screen and (max-width: 850px) {
+  .Article--main {
+    margin: 80px 10px;
+    padding: 5px 15px;;
+  }
+  .Article--title {
+    line-height: 1.1em;
+    font-size: 2em;
+    font-weight: normal;
+  }
+  .Article--title::before {
+    display: none;
+  }
+  .Article--date {
+    font-size: 0.9em;
+  }
+  .Article--punchline {
+    font-size: 0.9em;
+  }
+  .Article--description {
+    font-size: 0.9em;
+    color: var(--text--color);
+    white-space: pre-wrap;
+  }
+  .Article--descriptionBox {
+    font-size: 0.85em;
+    color: var(--text--color);
+  }
+  .Article--taskArea--btn {
+    font-size: 1.1em;
+  }
+}

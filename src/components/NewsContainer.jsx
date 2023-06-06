@@ -60,12 +60,10 @@ export default function NewsContainer(props) {
         <Link
           to={`/news/article/${props.idKey}`}
           rel="noreferrer"
-          target={"_blank"}
           className="NewsContainer--taskArea--btn"
         >
           <i className="fa-solid fa-up-right-from-square"></i>
-          {" "}
-          <span className="NewsContainer--taskArea--text">Open Link</span>
+          <span className="NewsContainer--taskArea--text"> Open Link</span>
         </Link>
         <span
           className="NewsContainer--taskArea--btn"
@@ -73,8 +71,7 @@ export default function NewsContainer(props) {
         >
           {popUpShown ? <span className="popUp">Copied!</span> : ""}
           <i className="fa-regular fa-clipboard"></i>
-          {" "}
-          <span className="NewsContainer--taskArea--text">Copy Link</span>
+          <span className="NewsContainer--taskArea--text"> Copy Link</span>
         </span>
       </div>
     </div>
