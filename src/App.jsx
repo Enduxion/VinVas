@@ -8,10 +8,11 @@ import News from "./pages/News";
 import About from "./pages/About";
 import Article from "./pages/Article";
 
+import acHTML from "./functions/acHTML";
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const tl = new gsap.timeline({ duration: "1" });
-
   function toggleDarkMode() {
     // This function sets the value of "darkMode" to false if the value is true and vice versa
     setDarkMode((prevValue) => !prevValue);

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import AsyncImage from "./AsyncImage";
 import "../css/NewsContainerStyle.css";
+import { acHTMLRemover } from "../functions/acHTML";
 
 const MAX_LINE_VAL = 150;
 
@@ -27,10 +28,12 @@ export default function NewsContainer(props) {
       clearTimeout(timer);
     };
   }, [isCopyPressed]);
-  let descriptionText =
-    props.description.trim().length > MAX_LINE_VAL
-      ? props.description.substr(0, MAX_LINE_VAL - 1) + "... "
-      : props.description;
+  let descriptionText = acHTMLRemover(props.description);
+  descriptionText =
+    descriptionText.trim().length > MAX_LINE_VAL
+      ? descriptionText.substr(0, MAX_LINE_VAL - 1) + "... "
+      : descriptionText;
+
   return (
     <div className="NewsContainer">
       <div className="NewsContainer--titleBar">

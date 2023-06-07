@@ -15,11 +15,14 @@ export default function About(props) {
       />
       <div className="About--main">
         <div className="About--title">Shree Vindhya Vasini Seconday School</div>
-        <div className="About--quote">- "Discipline And Dedication For Quality Education..."</div>
+        <div className="About--quote">
+          - "Discipline And Dedication For Quality Education..."
+        </div>
         <div className="About--imageContainer">
           <AsyncImage className="About--image" src={headerImage} />
         </div>
         <div className="About--subTitle">Introduction</div>
+        <br />
         <div className="About--description">{aboutUsData}</div>
       </div>
     </>

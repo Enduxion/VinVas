@@ -75,7 +75,7 @@ export default function Article(props) {
           ) : (
             ""
           )}
-          <div className="Article--description">{news.description}</div>
+          <div className="Article--description" dangerouslySetInnerHTML={{__html: replacedText}}></div>
         </div>
         <div className="Article--taskArea">
           <Link to="/" className="Article--taskArea--btn">
