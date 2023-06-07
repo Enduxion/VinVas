@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import AsyncImage from "../components/AsyncImage";
 
 import postData from "../assets/data/newsData";
+import acHTML from "../functions/acHTML";
 
 import "../css/ArticleStyle.css";
 import React from "react";
@@ -45,6 +46,7 @@ export default function Article(props) {
       setIsLandscape(img.width > img.height);
     };
   }, []);
+  let description = acHTML(news.description);
   return (
     <>
       <NavBar
@@ -75,7 +77,7 @@ export default function Article(props) {
           ) : (
             ""
           )}
-          <div className="Article--description" dangerouslySetInnerHTML={{__html: replacedText}}></div>
+          <div className="Article--description" dangerouslySetInnerHTML={{__html: (description)}}></div>
         </div>
         <div className="Article--taskArea">
           <Link to="/" className="Article--taskArea--btn">

@@ -11,7 +11,7 @@ const postData = [
     title: "The Amazing Adventure",
     date: "2023-06-01",
     punchline: "This is a story about the amazing adventure",
-    description: "&:bEmbark on an extraordinary journey filled with wonder&:~b, &:iexcitement&:~i, and unexpected twists. Join our intrepid explorers as they traverse uncharted territories, encountering mythical creatures and unraveling ancient mysteries. This epic adventure will test their courage, friendship, and determination as they face thrilling challenges at every turn. Prepare to be captivated by breathtaking landscapes, heart-pounding action, and a story that will leave you on the edge of your seat. Get ready for The Amazing Adventure of a lifetime!",
+    description: "Embark on an extraordinary journey filled with wonder, excitement&, and unexpected twists. Join our intrepid explorers as they traverse uncharted territories, encountering mythical creatures and unraveling ancient mysteries. This epic adventure will test their courage, friendship, and determination as they face thrilling challenges at every turn. Prepare to be captivated by breathtaking landscapes, heart-pounding action, and a story that will leave you on the edge of your seat. Get ready for The Amazing Adventure of a lifetime!",
     img: getRandomImage()
   },
   {

@@ -23,7 +23,7 @@ export default function About(props) {
         </div>
         <div className="About--subTitle">Introduction</div>
         <br />
-        <div className="About--description">{aboutUsData}</div>
+        <div className="About--description"></div>
       </div>
     </>
   );
