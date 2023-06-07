@@ -53,6 +53,12 @@
   color: var(--text--color);
   white-space: pre-wrap;
 }
+.About--facilitiesContainer {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
 @media screen and (max-width: 850px) {
   .About--main {
     margin: 10px;
@@ -72,5 +78,15 @@
   .About--description {
     line-height: 1.7em;
     font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .About--facilitiesContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 620px) {
+  .About--facilitiesContainer {
+    grid-template-columns: 1fr;
   }
 }

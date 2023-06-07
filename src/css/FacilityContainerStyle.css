@@ -1,0 +1,26 @@
+.FacilityContainer--main {
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  box-shadow: inset 0em 0em 0.15em rgba(var(--secondary--color-dark));
+  background-color: rgba(var(--primary--color));
+  word-break: break-word;
+}
+.FacilityContainer--title {
+  font-size: 1.4em;
+  color: var(--text--color);
+  font-weight: bold;
+}
+.FacilityContainer--description {
+  font-size: 1.1em;
+  color: var(--text--color);
+}
+.FacilityContainer--button {
+  margin-top: 10px;
+}
+@media screen and (max-width: 850px) {
+  .FacilityContainer--button {
+    font-size: 1.3em !important;
+  }
+}

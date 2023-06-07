@@ -1,11 +1,21 @@
-import NavBar from "../components/NavBar";
+import DOMPurify from "dompurify";
+
 import AsyncImage from "../components/AsyncImage";
+import NavBar from "../components/NavBar";
+import acHTML from "../functions/acHTML";
+import FacilityContainer from "../components/FacilityContainer";
 
-import aboutUsData from "../assets/data/aboutUsData";
-import headerImage from "../assets/images/TestPicture4.jpg";
 import "../css/aboutStyle.css";
-
+import headerImage from "../assets/images/TestPicture4.jpg";
+import aboutUsData from "../assets/data/aboutUsData";
+import facilityData from "../assets/data/facilityData";
 export default function About(props) {
+  let introductionDescription = acHTML(aboutUsData);
+  let facilities = facilityData.map((facility) => {
+    return (
+      <FacilityContainer key={facility.id} idKey={facility.id} title={facility.title} description={facility.description} img={facility.img} />
+    );
+  });
   return (
     <>
       <NavBar
@@ -23,7 +33,11 @@ export default function About(props) {
         </div>
         <div className="About--subTitle">Introduction</div>
         <br />
-        <div className="About--description"></div>
+        <div className="About--description" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(introductionDescription)}}></div>
+        <div className="About--subTitle">Facilites</div>
+        <div className="About--facilitiesContainer">
+          {facilities}
+        </div>
       </div>
     </>
   );

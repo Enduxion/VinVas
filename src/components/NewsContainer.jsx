@@ -63,18 +63,18 @@ export default function NewsContainer(props) {
         <Link
           to={`/news/article/${props.idKey}`}
           rel="noreferrer"
-          className="NewsContainer--taskArea--btn"
+          className="btn"
         >
           <i className="fa-solid fa-up-right-from-square"></i>
-          <span className="NewsContainer--taskArea--text"> Open Link</span>
+          <span className="btn--text"> Open Link</span>
         </Link>
         <span
-          className="NewsContainer--taskArea--btn"
+          className="btn"
           onClick={copyButtonPressed}
         >
           {popUpShown ? <span className="popUp">Copied!</span> : ""}
           <i className="fa-regular fa-clipboard"></i>
-          <span className="NewsContainer--taskArea--text"> Copy Link</span>
+          <span className="btn--text"> Copy Link</span>
         </span>
       </div>
     </div>

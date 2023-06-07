@@ -80,14 +80,14 @@ export default function Article(props) {
           <div className="Article--description" dangerouslySetInnerHTML={{__html: (description)}}></div>
         </div>
         <div className="Article--taskArea">
-          <Link to="/" className="Article--taskArea--btn">
+          <Link to="/" className="btn-s">
             <i className="fa-solid fa-arrow-right-to-bracket"></i>
-            <span className="Article--taskArea--text"> Go Back</span>
+            <span className="btn--text-s"> Go Back</span>
           </Link>
-          <span className="Article--taskArea--btn" onClick={copyButtonPressed}>
+          <span className="btn-s" onClick={copyButtonPressed}>
             {popUpShown ? <span className="popUp">Copied!</span> : ""}
             <i className="fa-regular fa-clipboard"></i>
-            <span className="Article--taskArea--text"> Copy Link</span>
+            <span className="btn--text-s"> Copy Link</span>
           </span>
         </div>
       </div>

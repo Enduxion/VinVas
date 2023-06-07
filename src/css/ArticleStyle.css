@@ -64,26 +64,6 @@
   margin-block: 5px 8px;
   width: 100%;
 }
-.Article--taskArea--btn {
-  display: flex;
-  padding-block: 5px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  white-space: pre-wrap;
-  text-decoration: none;
-  background-color: rgba(var(--primary--color), 0.96);
-  color: var(--text--color);
-  font-size: 1.4em;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.Article--taskArea--text {
-  font-size: 0.9em;
-}
-.Article--taskArea--btn:hover {
-  background-color: rgba(var(--primary--color), 0.6);
-}
 @media screen and (max-width: 850px) {
   .Article--main {
     margin: 80px 10px;
@@ -111,8 +91,5 @@
   .Article--descriptionBox {
     font-size: 0.85em;
     color: var(--text--color);
-  }
-  .Article--taskArea--btn {
-    font-size: 1.1em;
   }
 }
