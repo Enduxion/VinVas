@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "../css/NavBarStyle.css";
 import logo from "../assets/logo.png";
 import NavBarLinks from "./NavBarLinks";
+import AsyncImage from "./AsyncImage";
 
 export default function NavBar(props) {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
@@ -43,7 +44,7 @@ export default function NavBar(props) {
   return (
     <nav className={`navBar ${isNavBarHalf ? "navBar--half" : "navBar--full"}`}>
       <Link to="/" className="navBar--logo--link">
-        <img src={logo} className="navBar--logo--image" alt="logo" />
+        <AsyncImage src={logo} className="navBar--logo--image" alt="logo" />
         VVSS.
       </Link>
       <div

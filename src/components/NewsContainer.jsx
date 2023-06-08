@@ -43,7 +43,7 @@ export default function NewsContainer(props) {
       <div className="NewsContainer--descriptionBox">
         {descriptionText}
         {props.description.length > MAX_LINE_VAL ? (
-          <Link to={`/news/article/${props.idKey}`} className="btn--text">
+          <Link to={`/news/article/${props.idKey}`} className="text--type--button">
             {" "}
             See more
           </Link>

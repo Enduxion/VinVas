@@ -8,6 +8,7 @@ import News from "./pages/News";
 import About from "./pages/About";
 import Article from "./pages/Article";
 import Facility from "./pages/Facility";
+import Staff from "./pages/Staff";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -61,6 +62,12 @@ function App() {
           path="/about/facility/:id"
           element={
             <Facility darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          }
+        />
+        <Route
+          path="/staff"
+          element={
+            <Staff darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           }
         />
       </Routes>

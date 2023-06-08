@@ -76,6 +76,13 @@
 .btn-s:hover {
   background-color: rgba(var(--primary--color), 0.6);
 }
+.text--type--button {
+  color: var(--text--color-tint);
+  text-decoration: none;
+}
+.text--type--button:hover {
+  color: var(--text--color-focused);
+}
 @media screen and (max-width: 850px) {
   .btn {
     font-size: 1em;
