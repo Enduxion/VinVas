@@ -8,6 +8,7 @@ import acHTML from "../functions/acHTML";
 
 import "../css/ArticleStyle.css";
 import React from "react";
+import DOMPurify from "dompurify";
 
 export default function Article(props) {
   // copy button
@@ -77,7 +78,12 @@ export default function Article(props) {
           ) : (
             ""
           )}
-          <div className="Article--description" dangerouslySetInnerHTML={{__html: (description)}}></div>
+          <div
+            className="Article--description"
+            dangerouslySetInnerHTML={{
+              __html: DOMPurify.sanitize(description),
+            }}
+          ></div>
         </div>
         <div className="Article--taskArea">
           <Link to="/" className="btn-s">

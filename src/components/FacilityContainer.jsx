@@ -34,7 +34,10 @@ export default function FacilityContainer(props) {
         onMouseLeave={mouseOutGone}
       >
         <i className="fa-solid fa-up-right-from-square"></i>
-        <span className="btn--text FacilityContainer--button--text"> Open Link</span>
+        <span className="btn--text FacilityContainer--button--text">
+          {" "}
+          Open Link
+        </span>
       </Link>
     </div>
   );

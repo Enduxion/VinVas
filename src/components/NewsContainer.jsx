@@ -68,10 +68,7 @@ export default function NewsContainer(props) {
           <i className="fa-solid fa-up-right-from-square"></i>
           <span className="btn--text"> Open Link</span>
         </Link>
-        <span
-          className="btn"
-          onClick={copyButtonPressed}
-        >
+        <span className="btn" onClick={copyButtonPressed}>
           {popUpShown ? <span className="popUp">Copied!</span> : ""}
           <i className="fa-regular fa-clipboard"></i>
           <span className="btn--text"> Copy Link</span>

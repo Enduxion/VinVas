@@ -10,35 +10,34 @@
   border-radius: 10px;
 }
 .About--title {
+  margin-bottom: 10px;
   font-size: 2.5em;
   font-weight: bold;
   text-align: center;
   color: var(--text--color);
   text-decoration: 2px underline var(--text--color-tint);
   text-underline-offset: 0.3em;
-  margin-bottom: 10px;
 }
 .About--quote {
   font-size: 1.1em;
-  color: var(--text--color-tint);
   font-style: italic;
+  color: var(--text--color-tint);
 }
 .About--imageContainer {
+  padding: 5px;
   display: flex;
+  align-self: center;
   align-items: center;
   justify-content: center;
-  background-color:rgba(var(--primary--color));
-  border-radius: 15px;
-  align-self: center;
-  /* max-width: 100%; */
+  background-color: rgba(var(--primary--color));
   width: 100%;
-  padding: 5px;
+  border-radius: 15px;
 }
 .About--image {
   align-self: center;
-  border-radius: 15px;
   max-width: 100%;
   width: 100%;
+  border-radius: 15px;
   filter: contrast(200%);
 }
 .About--subTitle {
@@ -48,10 +47,10 @@
   color: var(--text--color);
 }
 .About--description {
-  line-height: 2em;
   font-size: 1.3em;
   color: var(--text--color);
   white-space: pre-wrap;
+  line-height: 2em;
 }
 .About--facilitiesContainer {
   margin-top: 10px;
@@ -76,8 +75,8 @@
     font-size: 1.5em;
   }
   .About--description {
-    line-height: 1.7em;
     font-size: 1.1em;
+    line-height: 1.7em;
   }
 }
 @media screen and (max-width: 1000px) {

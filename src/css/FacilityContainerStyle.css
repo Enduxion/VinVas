@@ -1,16 +1,16 @@
 .FacilityContainer--main {
+  padding: 10px;
   position: relative;
   width: 100%;
-  text-decoration: none;
-  padding: 10px;
-  box-shadow: inset 0em 0em 0.15em rgba(var(--secondary--color-dark));
   background-color: rgba(var(--primary--color));
+  box-shadow: inset 0em 0em 0.15em rgba(var(--secondary--color-dark));
+  text-decoration: none;
   word-break: break-word;
 }
 .FacilityContainer--title {
   font-size: 1.4em;
-  color: var(--text--color);
   font-weight: bold;
+  color: var(--text--color);
 }
 .FacilityContainer--description {
   font-size: 1.1em;

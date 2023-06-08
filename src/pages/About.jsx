@@ -13,7 +13,13 @@ export default function About(props) {
   let introductionDescription = acHTML(aboutUsData);
   let facilities = facilityData.map((facility) => {
     return (
-      <FacilityContainer key={facility.id} idKey={facility.id} title={facility.title} description={facility.description} img={facility.img} />
+      <FacilityContainer
+        key={facility.id}
+        idKey={facility.id}
+        title={facility.title}
+        description={facility.description}
+        img={facility.img}
+      />
     );
   });
   return (
@@ -33,11 +39,14 @@ export default function About(props) {
         </div>
         <div className="About--subTitle">Introduction</div>
         <br />
-        <div className="About--description" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(introductionDescription)}}></div>
+        <div
+          className="About--description"
+          dangerouslySetInnerHTML={{
+            __html: DOMPurify.sanitize(introductionDescription),
+          }}
+        ></div>
         <div className="About--subTitle">Facilites</div>
-        <div className="About--facilitiesContainer">
-          {facilities}
-        </div>
+        <div className="About--facilitiesContainer">{facilities}</div>
       </div>
     </>
   );
