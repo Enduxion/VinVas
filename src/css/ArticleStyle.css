@@ -36,12 +36,14 @@
   flex-direction: column;
 }
 .Article--protraitContainer {
+  padding: 0.15em;
   display: flex;
   align-self: center;
   align-items: center;
   justify-content: center;
-  background-color: rgba(var(--primary--color));
   width: 100%;
+  background-color: rgba(var(--primary--color), 0.4);
+  box-shadow: inset 0em 0em 0.45em rgba(var(--secondary--color-dark));
 }
 .Article--image {
   width: 100%;
@@ -49,6 +51,7 @@
 .Article--protrait {
   width: 50% !important;
   border-radius: 0px !important;
+  border: 0.15em solid rgba(var(--secondary--color-dark), 0.6);
 }
 .Article--description {
   font-size: 1.3em;

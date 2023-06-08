@@ -1,0 +1,32 @@
+.StaffContainer--main {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(var(--primary--color));
+  padding: 20px;
+  width: 100%;
+}
+.StaffContainer--imageContainer {
+  display: flex;
+  padding-block: 0.25em;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(var(--secondary--color), 0.4);
+  box-shadow: inset 0em 0em 0.25em rgba(var(--secondary--color-dark));
+}
+.StaffContainer--image {
+  width: 70%;
+}
+.StaffContainer--body {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.StaffContainer--text {
+  color: var(--text--color);
+  font-size: 1.1em;
+}
+.StaffContainer--value {
+  color: var(--text--color-focused);
+  font-size: 1.1em;
+}

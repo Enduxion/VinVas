@@ -1,0 +1,41 @@
+.StaffBox--main {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.StaffBox--clickDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  background-color: rgba(var(--primary--color));
+  box-shadow: inset 0em 0em 0.15em rgba(var(--secondary--color-dark));
+  word-break: break-word;
+  cursor: pointer;
+}
+.StaffBox--textBox {
+  display: flex;
+  flex-direction: column;
+}
+.StaffBox--text {
+  color: var(--text--color-tint);
+  font-size: 0.9em;
+}
+.StaffBox--title {
+  color: var(--text--color);
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.StaffBox--addButton {
+  color: var(--text--color);
+  font-size: 1.3em;
+}
+.StaffBox--staffContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
