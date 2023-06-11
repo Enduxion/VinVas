@@ -68,3 +68,10 @@
     color: var(--text--color);
   }
 }
+@media screen and (max-width: 1000px) {
+  .NewsContainer {
+    margin-top: 30px;
+    padding: 15px;
+    width: 90%;
+  }
+}
