@@ -29,7 +29,7 @@
   align-self: center;
   align-items: center;
   justify-content: center;
-  background-color: rgba(var(--primary--color));
+  background-color: rgba(var(--primary--color), 0.3);
   width: 100%;
   border-radius: 15px;
 }

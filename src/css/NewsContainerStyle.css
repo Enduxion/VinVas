@@ -68,7 +68,7 @@
     color: var(--text--color);
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 850px) {
   .NewsContainer {
     margin-top: 30px;
     padding: 15px;
