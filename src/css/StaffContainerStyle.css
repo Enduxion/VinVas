@@ -30,3 +30,19 @@
   color: var(--text--color-focused);
   font-size: 1.1em;
 }
+@media screen and (max-width: 850px) {
+  .StaffContainer--image {
+    width: 70%;
+  }
+  .StaffContainer--body {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .StaffContainer--text {
+    font-size: 1em;
+  }
+  .StaffContainer--value {
+    font-size: 1em;
+  }
+}

@@ -39,3 +39,11 @@
   gap: 10px;
   width: 100%;
 }
+@media screen and (max-width: 850px) {
+  .StaffBox--staffContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+}

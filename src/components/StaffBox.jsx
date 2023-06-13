@@ -33,7 +33,7 @@ export default function StaffBox(props) {
             Classes: {props.teachingClasses}
           </span>
         </div>
-        <i className="fa-solid fa-up-right-from-square StaffBox--addButton"></i>
+        <i className="fa-solid fa-plus StaffBox--addButton"></i>
       </div>
       {isStaffContainerOpen ? (
         <div className="StaffBox--staffContainer">{allStaff}</div>
